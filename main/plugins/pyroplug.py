@@ -201,7 +201,7 @@ async def get_msg(userbot, client, bot, sender, edit_id, msg_link, i):
             await client.copy_message(sender, chat, msg_id)
         except Exception as e:
             print(e)
-            return await client.edit_message_text(sender, edit_id, f'Failed to save: `{msg_link}`\n\nError: {str(e)}')
+            return await client.edit_message_text(sender, edit_id, f'Failed to2 save: `{msg_link}`\n\nError: {str(e)}')
         await edit.delete()
         
 async def get_bulk_msg(userbot, client, sender, msg_link, i):
